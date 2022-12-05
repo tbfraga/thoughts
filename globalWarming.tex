@@ -26,6 +26,8 @@
 \newcolumntype{b}{>{\columncolor{blue}}l}
 \newcolumntype{d}{>{\columncolor{green}}l}
 
+\usepackage{pdfpages}
+
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 
@@ -95,5 +97,41 @@ In the place where I live, I observed that people set fire to the dry forest, an
 I believe that an in-depth study will show that in many cultures rituals were performed to bring about the rains. I believe that an in-depth study is warranted on whether ancient and current rituals hold ancient and extremely relevant knowledge.\\
 
 Perhaps this knowledge can help control the planet's temperature. I hope so.
+
+... \\
+
+Let's include some experimental data... \\
+
+
+weather forecast - PE on 11/27/2022 for the next fifteen days:
+
+\includepdf[pages={1-10}]{figures/prediction.pdf}
+
+\begin{figure}[h]
+	\begin{center}
+	    \caption{Photo after burning the bush near my house on 2022/12/01, Chã Grande - PE - Brazil.}
+		\label{fig:bushBurning}
+		\centering
+		\includegraphics[width=\textwidth]{figures/IMG_20221201_142418.jpg}
+	\end{center}
+\end{figure}
+
+\begin{figure}[h]
+	\begin{center}
+	    \caption{Rain all day on 2022/12/05, Chã Grande - PE - Brazil.}
+		\label{fig:rain1}
+		\centering
+		\includegraphics[width=\textwidth]{figures/IMG-20221205-WA0005.jpg}
+	\end{center}
+\end{figure}
+
+\begin{figure}[h]
+	\begin{center}
+	    \caption{Rain all day on 2022/12/05, Chã Grande - PE - Brazil.}
+		\label{fig:rain2}
+		\centering
+		\includegraphics[width=\textwidth]{figures/IMG_20221205_171659.jpg}
+	\end{center}
+\end{figure}
 
 \end{document}
