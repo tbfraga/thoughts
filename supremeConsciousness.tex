@@ -1,0 +1,115 @@
+\documentclass{book}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{multirow}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{ {Figures/} }
+\usepackage{float}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+
+\usepackage{natbib,stfloats}
+
+\tcbuselibrary{skins,breakable}
+\usetikzlibrary{shadings,shadows}
+\usepackage{rotating}
+
+\usepackage{tikz}
+\usetikzlibrary{snakes}
+\usetikzlibrary{patterns}
+
+\usepackage{colortbl}
+\newcolumntype{a}{>{\columncolor{yellow}}l}
+\newcolumntype{b}{>{\columncolor{blue}}l}
+\newcolumntype{d}{>{\columncolor{green}}l}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\fancyhead{}
+\fancyhead[RO]{\textsl{\rightmark}} 
+\fancyhead[LE]{\textsl{\leftmark}} 
+
+\fancyfoot{} 
+\fancyfoot[L]{T.B. Fraga. thoughts: supreme consciousness.}
+\fancyfoot[R]{\thepage}
+
+\definecolor{cambridgeblue}{rgb}{0.64, 0.76, 0.68}
+\definecolor{camel}{rgb}{0.76, 0.6, 0.42}
+\definecolor{camouflagegreen}{rgb}{0.47, 0.53, 0.42}
+\definecolor{desertsand}{rgb}{0.93, 0.79, 0.69}
+
+\newenvironment{exerciseblock}[1]{%
+    \tcolorbox[beamer,%
+    noparskip,breakable,
+    colback=camel!20,colframe=camouflagegreen,%
+    colbacklower=camouflagegreen!75!camel!20,%
+    title=#1]}%
+    {\endtcolorbox}
+
+\newenvironment{exempleblock}[1]{%
+    \tcolorbox[beamer,%
+    noparskip,breakable,
+    colback=camel!20,colframe=Brown!70,%
+    colbacklower=camouflagegreen!75!camel!20,%
+    title=#1]}%
+    {\endtcolorbox}
+
+\newenvironment{algorithmblock}[1]{%
+    \tcolorbox[beamer,%
+    noparskip,breakable,
+    colback=camel!20,colframe=Brown!40,%
+    colbacklower=camouflagegreen!75!camel!20,%
+    title=#1]}%
+    {\endtcolorbox}
+
+\newenvironment{dedication}
+  {\clearpage           % we want a new page
+   \thispagestyle{empty}% no header and footer
+   \vspace*{\stretch{1}}% some space at the top 
+   \itshape             % the text is in italics
+   \raggedleft          % flush to the right margin
+  }
+  {\par % end the paragraph
+   \vspace{\stretch{3}} % space at bottom is three times that at the top
+   \clearpage           % finish off the page
+  }
+
+% para construção de diagramas
+
+\tikzstyle{place}=[circle,draw=camouflagegreen!80,fill=desertsand!20,thick]
+\tikzstyle{Ret}=[rectangle,draw=camouflagegreen!80,fill=desertsand!20,thick]
+\tikzstyle{RoundRet}=[rectangle,draw=camouflagegreen!80,fill=desertsand!20,thick, rounded corners]
+
+\begin{document}
+
+I belive that there is a supreme intelligence in our universe. Omnipresent, omniscient and omnipotent. \\
+
+This intelligence has no form, it is neither good nor bad, because it falls short of these concepts. This being just is. It exists. \\
+
+This has the capacity to guide man, and the entire universe of which man consists, as well as animals, vegetables and minerals, as well as the entire universe that cohabits these elements and the entire universe that is among these elements. \\
+
+Before good and evil, there is order and chaos. \\
+
+It guide so that there is order. \\
+
+This supreme consciousness, cohabits, inspires and leads us to the path of wisdom. \\
+
+When I say that I believe in God, or when I speak of God, it is this consciousness that I am referring to. \\
+
+The strange thing is that if this consciousness seeks order. What causes chaos ? \\
+
+It is possible that man is moving further and further away from this supreme consciousness. \\
+
+Out of ignorance, man sees himself as a unique being, endowed with an existence of his own. And he fights for his self to prevail. \\
+
+I believe that chaos is a digression force. And man, like everything else in the universe, is affected by this force. \\
+
+Perhaps this explains man's ignorance. And the reason for such ignorance has prevailed. \\
+
+Perhaps this is the struggle of existence. Not between good and evil but between order and chaos.
+
+\end{document}
